@@ -25,7 +25,7 @@ var userInfo = {
     jobWant:  "WEB前端开发工程师",
     userQQ:  "1403049031",
     userEmail:   "1403049031@qq.com",
-    motto:  "一个从不犯错误的人，一定从来没有尝试过任何新鲜事物。——艾尔伯特·爱因斯坦", 
+    motto:  "一个从不犯错误的人，一定从来没有尝试过任何新鲜事物。", 
     userPhone: 15819194506,
     userOrignPlace:  "河北省邢台市" ,
     userSeatPlace:  "北京市",

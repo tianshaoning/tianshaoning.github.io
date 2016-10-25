@@ -1,0 +1,47 @@
+/* 工具样式表 */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.ico_common{
+	background-image: url(../img/common/ico_common.png);
+	background-repeat: no-repeat;
+}
+.ico_index{
+	background-image: url(../img/index/ico_index.png);
+	background-repeat: no-repeat;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.bt{
+	border-top: 1px solid #efefef;
+}
+.br{
+	border-right: 1px solid #efefef;
+}
+.bb{
+	border-bottom: 1px solid #efefef;
+}
+.bl{
+	border-left: 1px solid #efefef;
+}

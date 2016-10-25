@@ -1,0 +1,39 @@
+/* 样式重置表 */
+body,h1,h3,h4,dl,dd,p{
+	margin: 0;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+a{
+	color: #6c6c6c;
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+select{
+	border: none; 
+	color: #ff684d;
+	font-family: "微软雅黑";
+}
+th,td{
+	padding: 0;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+form{
+	margin: 0;
+	padding: 0;
+}

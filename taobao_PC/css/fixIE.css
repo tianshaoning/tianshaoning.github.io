@@ -1,0 +1,15 @@
+/* 兼容性样式表 */
+li{
+	vertical-align: top;
+}
+body{
+	font: 12px arial "宋体";
+}
+/* 图标_每个模块头部的兼容--最小高度19px的问题 */
+/*.top_bar ., .item_head .head_bg, .topMenu_nav .ico_nav{
+	*overflow: hidden;
+}*/
+/* 浮动元素有margin时，双边距问题 */
+/*.header_nav .nav_item{
+	display: inline;
+}*/

@@ -1,0 +1,197 @@
+/* 全局通用样式表 */
+body{
+	/*font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;*/
+	font:12px arial,"宋体";
+	background-color: #f1f1f1;
+}
+/*主体样式*/
+.wrap{
+	width: 1190px;
+	margin: auto;
+}
+#top{
+	height: 35px;
+	border-bottom: 1px solid #eeeeee;
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	line-height: 35px;
+}
+#top .top_bar{
+	padding-left: 6px;
+}
+#top a:hover{
+	color: #ff4400;
+}
+#top .login_tip{
+	color: #f22e00;
+	margin-right: 2px;
+}
+#top .login_tip:hover{
+	color: #f22e00;
+}
+#top .login_reg{
+	margin-right: 20px;
+}
+#top .top_menu li{
+	margin-right: 3px;
+	padding:0 6px;
+	position: relative;
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	cursor: pointer;
+}
+#top .top_menu .ico_select,#top .top_menu .ico_select-light{
+	display: inline-block;
+	width: 7px;
+	height: 4px;
+	vertical-align: 2px;
+	transition: 200ms;
+}
+#top .top_menu .ico_select{
+	background-position: 0 0;
+}
+#top .top_menu .ico_select-light{
+	background-position: -7px 0;
+}
+#top .top_menu li:hover{
+	background-color: #fff;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+}
+#top .top_menu li:hover .ico_select{
+	transform: rotate(180deg);
+}
+#top .top_menu li:hover .ico_select-light{
+	transform: rotate(180deg);
+}
+#top .top_menu .ico_shopCart-light{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-position: 0 -4px;
+	vertical-align: -1px;
+}
+#top .top_menu .ico_collect{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-position: 0 -16px;
+	vertical-align: -1px;
+}
+#top .top_menu a:hover .ico_collect{
+	background-position: -12px -16px;
+}
+#top .top_menu .ico_nav-light{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-position: 0 -28px;
+	vertical-align: -1px;
+}
+#top .top_menu .line{
+	color: #e4dde4;
+	cursor:default;
+}
+#top .top_menu .line:hover{
+	border-left-color: #f5f5f5;
+	border-right-color: #f5f5f5;
+	background-color: #f5f5f5;
+}
+/**
+ * foot
+ */
+#foot{
+	margin-top: 34px;
+	min-height: 316px;
+	margin-bottom: 40px;
+}
+#foot .line{
+	color: #dddddd;
+}
+#foot .foot_helper{
+	height: 148px;
+	border-bottom: 2px solid #ff4400;
+	box-sizing: border-box;
+}
+#foot .foot_helper .each_helperType{
+	width: 297px;
+	height: 102px;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+#foot .each_helperType .helper_title{
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+}
+#foot .each_helperType .helper_title .ico_helperTitle{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+#foot .foot_helper a{
+	white-space: nowrap;
+	margin-right: 9px;
+	color: #999999;
+	line-height: 21px;
+}
+#foot .each_helperType a:hover,#foot .ali_otherLink a:hover{
+	color: #ff4400;
+}
+#foot .each_helperType:nth-child(1) .ico_helperTitle{
+	background-position: 0 -266px;
+}
+#foot .each_helperType:nth-child(2) .ico_helperTitle{
+	background-position: -34px -266px;
+}
+#foot .each_helperType:nth-child(3) .ico_helperTitle{
+	background-position: 0 -300px;
+}
+#foot .each_helperType:nth-child(4) .ico_helperTitle{
+	background-position: -34px -300px;
+}
+#foot .ali_otherLink{
+	height: 70px;
+	padding: 8px 4px 7px 4px;
+	border-bottom: 1px solid #dddddd;
+	color: #dddddd;
+	box-sizing: border-box;
+}
+#foot .ali_otherLink a{
+	line-height: 27px;
+	margin-right: 4px;
+	padding-right: 10px;
+	border-right: 1px solid #dddddd;
+	color: #6c6c6c;
+}
+#foot .aboutUs-copyRight-credentials{
+	height: 60px;
+	padding: 4px 4px 2px 4px;
+	line-height: 28px;
+	color: #9c9c9c;
+	box-sizing: border-box;
+}
+#foot .aboutUs-copyRight-credentials .aboutUs_copyRight a{
+	margin-right: 9px;
+	color: #6c6c6c;
+	float: left;
+	margin-right: 9px;
+}
+#foot .aboutUs-copyRight-credentials a:hover{
+	color: #ff4400;
+}
+#foot .aboutUs-copyRight-credentials .copyRight{
+	margin-left: 40px;
+}
+#foot .credentials .line{
+	margin: 0 6px 0 4px;
+}
+#foot .friend_link{
+	padding: 0 4px;
+}
+#foot .friend_link a{
+	height: 36px;
+	margin-right: 23px;
+}

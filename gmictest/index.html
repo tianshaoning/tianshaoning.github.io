@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<title>让科学有温度</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="cover">
+				<div class="bg"></div>
+				<div class="share"></div>
+			</div>
+			<!-- 卡片1 -->
+			<div class="section chapter1">
+				<div class="video_btn" data-video="./video/shipin1.mp4"></div>
+			</div>
+			<!-- 卡片2 -->
+			<div class="section chapter2">
+				<div class="video_btn" data-video="./video/shipin2.mp4"></div>
+			</div>
+			<!-- 卡片3 -->
+			<div class="section chapter3">
+				<div class="video_btn" data-video="./video/shipin3.mp4"></div>
+			</div>
+			<!-- 卡片4 -->
+			<div class="section chapter4">
+				<div class="video_btn" data-video="./video/shipin4.mp4"></div>
+			</div>
+			<!-- 卡片5 -->
+			<div class="section chapter5">
+				<div class="video_btn" data-video="./video/shipin5.mp4"></div>
+			</div>
+			<!-- 封底 -->
+			<div class="backcover">
+				<img class="bg" src="image/bg2.jpg" />
+			</div>
+
+		</div>
+		<div class="video_wrap">
+			<div class="video_close">&times;</div>
+			<video class="video" src="" controls="controls"></video>
+		</div>
+		<div class="loading" style="display: none;">
+			<div class="loader-inner ball-scale-ripple">
+				<div></div>
+			</div>
+		</div>
+		<div class="wapShareWrap">
+			<div class="wapShareLayout"></div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			//分享
+			var shareImgUrl = "http://case.geek-scorpion.com/abc/image/bg1.jpg";
+			var shareLinkUrl = "http://case.geek-scorpion.com/gmictest/H5/index.html";
+			var url = encodeURIComponent(window.location.href);
+			//配置
+			$.ajax({
+				type: "post",
+				dataType: "json",
+				url: "http://library.geek-scorpion.com/Hesi/jssdk",
+				data: {
+					url: url
+				},
+				success: function(result) {
+					console.dir(result);
+					callback(result);
+				}
+			});
+
+			function callback(config) {
+				wx.config(config);
+				wx.ready(function() {
+					wx.onMenuShareAppMessage({
+						title: '让科学有温度',
+						desc: 'GMIC特别策划之每个人的科学梦想',
+						link: shareLinkUrl,
+						imgUrl: shareImgUrl
+					});
+					wx.onMenuShareTimeline({
+						title: '让科学有温度',
+						link: shareLinkUrl,
+						imgUrl: shareImgUrl
+					});
+				});
+			}
+		</script>
+	</body>
+
+</html>

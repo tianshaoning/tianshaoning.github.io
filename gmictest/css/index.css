@@ -1,0 +1,238 @@
+body {
+	margin: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Roboto, HelveticaNeue, Helvetica, Arial, sans-serif;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	background: #f7f7f7
+}
+
+.wrap {
+	width: 100%;
+	overflow: hidden
+}
+
+.cover {
+	width: 100%;
+	height: 937px;
+	overflow: hidden;
+	position: relative
+}
+
+.cover .bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 937px;
+	background: url(../image/bg1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.cover .share {
+	display: block;
+	position: fixed;
+	left: 533px;
+	top: 20px;
+	z-index: 100;
+	width: 72px;
+	height: 72px;
+	background: url(../image/sprite.png) no-repeat -500px 0;
+}
+
+.backcover {
+	width: 100%;
+	height: 1179px;
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative
+}
+
+.backcover .bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1179px;
+}
+
+.section {
+	position: relative;
+	width: 100%;
+	height: 360px;
+	margin-top: 10px;
+}
+
+
+.section .video_btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 316px;
+	height: 360px;
+	background: url(../image/btn.png) no-repeat center center
+}
+
+.section .video_btn2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 316px;
+	height: 360px;
+}
+
+.section .tip {
+	position: absolute;
+	left: 150px;
+	top: 144px;
+	font: 28px/28px "";
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+.chapter1 {
+	background: url(../image/1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.chapter2 {
+	background: url(../image/2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.chapter3 {
+	background: url(../image/3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.chapter4 {
+	background: url(../image/4.jpg) no-repeat;
+	background-size: cover;
+}
+
+.chapter5 {
+	background: url(../image/5.jpg) no-repeat;
+	background-size: cover;
+}
+
+.video_wrap{
+	position: absolute;
+	left: -999px;
+	top: 0
+}
+
+.video {
+	width: 0;
+	height: 0;
+}
+
+.videoinandroid{
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #000;
+}
+
+.videoinandroid .video_close{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 100;
+	font: 50px/1 "";
+	color: #fff
+}
+
+.videoinandroid .video{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.loading {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5)
+}
+
+@-webkit-keyframes ball-scale-ripple {
+	0% {
+		-webkit-transform: scale(0.1);
+		transform: scale(0.1);
+		opacity: 1
+	}
+	70% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: .7
+	}
+	100% {
+		opacity: .0
+	}
+}
+
+@keyframes ball-scale-ripple {
+	0% {
+		-webkit-transform: scale(0.1);
+		transform: scale(0.1);
+		opacity: 1
+	}
+	70% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: .7
+	}
+	100% {
+		opacity: .0
+	}
+}
+
+.ball-scale-ripple>div {
+	position: absolute;
+	left: 270px;
+	top: 50%;
+	margin-top: -50px;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 4px solid #fff;
+	-webkit-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
+	animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8)
+}
+
+.wapShareWrap {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 9999;
+	display: none;
+}
+
+.wapShareLayout {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url(../image/share.png) rgba(0, 0, 0, .5) no-repeat 340px 30px;
+	z-index: 1;
+}
